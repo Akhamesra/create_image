@@ -1,10 +1,10 @@
 pipeline {
-    agent { node { label "$env.label"}}
+    agent any
 
     stages {
         stage('Code checkout'){
             steps{
-                git branch: 'main', credentialsId: 'github', url: 'https://github.com/Akhamesra/create_image.git0'
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/Akhamesra/create_image.git'
                 echo 'Code Checkout Done'
             }
         }
