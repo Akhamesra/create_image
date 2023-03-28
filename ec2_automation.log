@@ -1,0 +1,10 @@
+2023-03-28 15:00:06,622 INFO botocore.credentials : Found credentials in shared credentials file: ~/.aws/credentials
+2023-03-28 15:01:51,862 INFO botocore.credentials : Found credentials in shared credentials file: ~/.aws/credentials
+2023-03-28 15:10:39,557 INFO botocore.credentials : Found credentials in shared credentials file: ~/.aws/credentials
+2023-03-28 15:11:46,471 INFO botocore.credentials : Found credentials in shared credentials file: ~/.aws/credentials
+2023-03-28 15:12:16,426 INFO botocore.credentials : Found credentials in shared credentials file: ~/.aws/credentials
+2023-03-28 15:12:32,437 INFO botocore.credentials : Found credentials in shared credentials file: ~/.aws/credentials
+2023-03-28 15:13:32,510 INFO botocore.credentials : Found credentials in shared credentials file: ~/.aws/credentials
+2023-03-28 15:14:14,271 INFO botocore.credentials : Found credentials in shared credentials file: ~/.aws/credentials
+2023-03-28 15:14:33,349 INFO botocore.credentials : Found credentials in shared credentials file: ~/.aws/credentials
+2023-03-28 15:14:38,735 INFO botocore.credentials : Found credentials in shared credentials file: ~/.aws/credentials
