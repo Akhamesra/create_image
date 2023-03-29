@@ -42,24 +42,11 @@ def create_ami(key,value):
                                      NoReboot =  True,
                                      TagSpecifications=[{
                                           'ResourceType' : 'image',
-                                          'Tags': [
-                                              {
-                                                  'Key': 'Name',
-                                                  'Value': image_name
-                                              },
-                                              {
-                                                  'Key': 'Instance_name',
-                                                  'Value': value
-                                              },
-                                              {
-                                                  'Key': 'Date',
-                                                  'Value': str(date)
-                                              },                                              
-                                              {
-                                                  'Key': 'REF_ID',
-                                                  'Value': refid
-                                              },
-                                          ]
+                                          'Tags': [ {'Key': 'Name',         'Value': image_name},
+                                                    {'Key': 'Instance_name','Value': value},
+                                                    {'Key': 'Date',         'Value': str(date)},                                              
+                                                    {'Key': 'REF_ID',       'Value': refid},
+                                                  ]
                                       },
                                   ])
   print('Image created')
