@@ -1,6 +1,5 @@
 pipeline {
-    agent any
-
+    agent {node {label "${env.AGENT_LABEL}"}}
     stages {
         stage('Code checkout'){
             steps{
@@ -11,7 +10,6 @@ pipeline {
 
         stage('Run Python Script') {
             steps {
-                sh 'pip3 install boto3'
                 sh 'python3 AWS_automation.py'
             }
         }

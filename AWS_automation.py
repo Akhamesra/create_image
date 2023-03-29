@@ -23,6 +23,7 @@ def create_ami(key,value):
   # refid = input('Enter REF_ID : ')
   image_name =  os.getenv("Image_name")
   refid = os.getenv("REF_ID")
+
   if not check_ref_id(refid):
     print('REF_ID format is incorrect')
     return
@@ -63,7 +64,6 @@ def create_ami(key,value):
                                   ])
   print('Image created')
 
+
 # get_ami('Name','web2')
-
-
-create_ami('Name','web')
+create_ami('Name',os.getenv("EC2_Name"))
