@@ -11,7 +11,7 @@ pipeline {
 
         stage('Run Python Script') {
             steps {
-                sh 'pip install boto3'
+                sh 'pip3 install boto3'
                 sh 'python3 AWS_automation.py'
             }
         }

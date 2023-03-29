@@ -1,6 +1,6 @@
 import boto3
 import datetime
-
+import os
 ec2_client = boto3.client('ec2')
 ec2_resource = boto3.resource('ec2')
 
@@ -19,9 +19,10 @@ def check_ref_id(refid):
     return False
   
 def create_ami(key,value):
-  image_name = input('Enter Name to give to AMI : ')
-  refid = input('Enter REF_ID : ')
-
+  # image_name = input('Enter Name to give to AMI : ')
+  # refid = input('Enter REF_ID : ')
+  image_name =  os.getenv("Image_name")
+  refid = os.getenv("REF_ID")
   if not check_ref_id(refid):
     print('REF_ID format is incorrect')
     return
