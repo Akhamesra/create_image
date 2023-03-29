@@ -10,7 +10,7 @@ pipeline {
 
         stage('Run Python Script') {
             steps {
-                sh 'python3 AWS_automation.py'
+                sh 'flask ami_cli create_ami -n ${env.EC2_Name} -i ${env.Image_name} -r {$env.REF_ID}'
             }
         }
     }
