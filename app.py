@@ -7,6 +7,7 @@ import click
 
 app = Flask(__name__)  
 ami_cli = AppGroup('ami_cli')
+app.cli.add_command(ami_cli)
 
 ec2_client = boto3.client('ec2')
 ec2_resource = boto3.resource('ec2')
@@ -64,7 +65,7 @@ def create_ami(ec2_name,image_name,refid):
                                   ])
   print('Image created')
 
-app.cli.add_command(ami_cli)
+
 
 # get_ami('Name','web2')
 # create_ami('Name',os.getenv("EC2_Name"))
